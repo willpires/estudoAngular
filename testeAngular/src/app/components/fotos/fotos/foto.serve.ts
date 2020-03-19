@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Foto } from '../fotos/foto'
 
 @Injectable({providedIn:'root'})
 export class FotoService {
@@ -9,7 +10,7 @@ export class FotoService {
 
   }
   listFromUser(useName: string){
-    return this.http.get<Object[]>(this.Api)
+    return this.http.get<Foto[]>(this.Api)
 
   }
 

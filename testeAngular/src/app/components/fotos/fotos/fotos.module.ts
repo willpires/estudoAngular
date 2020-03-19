@@ -11,13 +11,10 @@ import {CommonModule} from '@angular/common';
     LoginComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
   ],
-  exports: [
-    FotoListComponent,
-    FotosComponent,
-    LoginComponent
-  ]
+
 
 })
 export class FotosModule {
