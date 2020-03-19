@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "primeiroProjeto": {
+    "testeAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/primeiroProjeto",
+            "outputPath": "dist/testeAngular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -64,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "primeiroProjeto:build"
+            "browserTarget": "testeAngular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "primeiroProjeto:build:production"
+              "browserTarget": "testeAngular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "primeiroProjeto:build"
+            "browserTarget": "testeAngular:build"
           }
         },
         "test": {
@@ -112,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "primeiroProjeto:serve"
+            "devServerTarget": "testeAngular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "primeiroProjeto:serve:production"
+              "devServerTarget": "testeAngular:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "primeiroProjeto",
+  "defaultProject": "testeAngular",
   "cli": {
-    "analytics": "fa15fa60-e778-4817-9fb9-7544dd5b8132"
+    "analytics": "a909a3d0-3b01-4ec0-921e-9e9232930944"
   }
 }
