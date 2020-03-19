@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FotosModule} from './components/fotos/fotos.module';
+import { FotosModule } from './components/fotos/fotos/fotos.module';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
